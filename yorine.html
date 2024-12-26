@@ -1,0 +1,170 @@
+<DOCTORTYPE html>
+<html lang="uk">
+<head>
+    <title>Yorine</title>
+	<style>
+		    body {
+			    font-family: sans-serif;
+				margin: 0;
+				padding: 0;
+				background-color: #5C5C5C;
+		    }
+
+			header {
+			    background-color: #333;
+			    color: pink;
+				padding: 15px;
+				text-align: center;
+			}
+				
+			nav {
+			    display: flex;
+				justify-content: center;
+				background-color: #C9B;
+			}
+			
+			nav a {
+			    color: white;
+				padding: 15px 20px;
+				text-decoration: none;
+				text-transform: uppercase;
+				border-color: #C8B;
+				border-radius: 5px;
+			}
+				
+			section {
+			    padding: 30px;
+				margin: 10px;
+				background-color: gray;
+				border-color: black;
+				border-radius: 5px;
+				color: white;
+			}
+			
+			a {
+			    color: pink;
+			}
+			
+		    .custom-link {
+			    color: white;
+		    }
+			
+			.custom-section {
+			    text-align: center;
+		    }
+			
+            .section-header {
+                background-color: gray;
+                cursor: pointer;
+                padding: 10px;
+                font-weight: bold;
+                display: flex;
+                align-items: center;
+            }
+            .arrow {
+                margin-right: 10px;
+                transition: transform 0.3s;
+            }
+            .section-content {
+                display: none;
+                padding: 10px;
+            }
+            .open .arrow {
+                transform: rotate(90deg);
+			}
+
+            a:hover {
+            text-decoration: underline;
+            }
+
+        </style>
+</head>
+<body>
+
+    <header>
+	    <h2><a href="https://t.me/yorine_solo">Йорін</a></h2>
+	</header>
+	
+	<nav>
+	    <a href="#info">Інформація</a>
+	    <a href="#bio">Біографія</a>
+		<a href="#karier">Кар'єра</a>
+	</nav>
+	
+	<nav>
+	    <a href="#dg">Дискографія</a>
+		<a href="#channels">Соц. мережі</a>
+	</nav>
+	
+	<section id="info" class="custom-section">
+	    <h4><strong>Інформація</strong></h4>
+		<p>Псевдонім: Йорін</p>
+		<p>Дата народжння: 19 квітня 2011 року (13 років)</p>
+		<p>Місце народження: Запоріжжя, Запорізька область, Україна</p>
+        <p>Візуальний прототип: Сакура (from Le Sserafim)</p>
+	</section>
+	
+	<section id="bio">
+	<div class="section">
+        <div class="section-header" onclick="toggleSection(this)">
+        <span class="arrow">▶</span> <h4><strong>Біографія</strong></h4>
+            </div>
+        <div class="section-content">Йорін народилась та зростала у місті Запоріжжя.
+	        <p>На початку повномаштабної війни,у 2022 році, переїхала на деякий час у Тернопіль. Пробувши там два місяці, з початку березня та до кінця квітня, вона переїхала назад до Запоріжжя.</p>
+	        <p> ︎</p>
+	        <p>Навчалась,та навчається Йорін у гімназії №111. Наразі вона у восьмому класі.</p>
+        </div>
+	</div>
+   
+    </section>
+	
+	<section id="karier">
+	<div class="section">
+        <div class="section-header" onclick="toggleSection(this)">
+        <span class="arrow">▶</span><h4><strong>Кар'єра</strong></h4>
+            </div>
+         <div class="section-content">В Онлайн Індустрії Йорін ще з 2023 року. Перший її дебют був під прототипом Юкі(Yuqi). Зараз Йорін у гурті без прототипу, який називається <a href="https://moosh.tilda.ws" class="custom-link">MOOSH</a>.
+		<p>Йорін почала свій шлях в Онлайн Індустрії під прототипом Ліси з гурту BLACKPINK, але цей гурт розпався, навіть не дебютувавши.</p></div>
+        </div>
+	</div>
+		
+	</section>
+	
+	<section id="dg">
+	<div class="section">
+        <div class="section-header" onclick="toggleSection(this)">
+        <span class="arrow">▶</span><strong><h4>Дискографія</h4></strong>
+            </div>
+        <div class="section-content">Дебютний сингл "My", в нього входили такі пісні: My. Дата виходу 30.11.2024.
+		<p>Сингл "In Love", в нього входили такі пісні: "In Love", "Моя зірка (feat. Енаі)</p>"</div>
+        </div>
+	</div>
+	
+	</section>
+	
+	<section id="channels"> 
+	<div class="section">
+        <div class="section-header" onclick="toggleSection(this)">
+		<span class="arrow">▶</span><strong><h4>Соціальні мережі та канали</h4></strong>
+		    </div>
+	    <div class="section-content">Telegram channel - <a href="https://t.me/yorine_solo" class="custom-link"><strong>𝓨𝓸𝓻𝓲𝓷𝓮</strong></p>
+		</div>
+	</div>
+		
+<script>
+    function toggleSection(header) {
+        const content = header.nextElementSibling;
+        const arrow = header.querySelector('.arrow');
+        
+        if (content.style.display === "block") {
+            content.style.display = "none";
+            header.classList.remove('open');
+        } else {
+            content.style.display = "block";
+            header.classList.add('open');
+        }
+    }
+</script>
+
+</body>
+</html>
